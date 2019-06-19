@@ -9,7 +9,9 @@ Paste your answers into this file.
 ## Print every number from 0 to 10
 
 ```
-ANSWER HERE
+for (i = 0; i < 11; i++)
+{console.log(i);}
+
 ```
 
 <br>
@@ -17,7 +19,9 @@ ANSWER HERE
 ## Print every number from 10 to 0
 
 ```
-ANSWER HERE
+for (i = 10; i >=0 ; i--)
+{console.log(i);}
+
 ```
 
 <br>
@@ -25,7 +29,8 @@ ANSWER HERE
 ## Print every number from 4 to -16
 
 ```
-ANSWER HERE
+for (i = 4; i >=-16; i--)
+{console.log(i);}
 ```
 
 <br>
@@ -33,7 +38,10 @@ ANSWER HERE
 ## Print every fifth number from 8 to 41
 
 ```
-ANSWER HERE
+for (i=8; i <=41; i+=5)
+{
+console.log(i);
+}
 ```
 
 <br>
@@ -50,7 +58,23 @@ If the `number` is evenly divisible by 3 AND evenly divisible by 5, print "Fizzb
 
 
 ```
-ANSWER HERE
+for(i=1; i<100; i++)
+{
+
+if (i%3==0 && i%5==0)
+{ console.log(i+ " FizzBuzz");
+}
+
+else if (i%3==0)
+{ console.log(i + " Fizz");
+}
+
+else if (i%5==0)
+{ console.log(i + " Buzz");
+}
+
+
+}
 ```
 
 <br>
@@ -61,7 +85,15 @@ ANSWER HERE
 Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
 
 ```
-ANSWER HERE
+for(i=0; i<21; i++)
+{
+
+if (i%2==0)
+console.log(i+ " is even");
+
+else console.log(i+ " is odd");
+}
+
 ```
 
 <br>
@@ -74,7 +106,11 @@ Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 1
 
 
 ```
-ANSWER HERE
+for (i=0; i<=10; i++)
+{
+
+console.log(i +" * 9 = " + 9*i);
+}
 ```
 
 <br>
@@ -84,5 +120,16 @@ ANSWER HERE
 Check the results for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
 ```
-ANSWER HERE
+for (i =60; i<= 100; i++)
+{
+
+ if (i < 70 )
+   console.log(`${i} you got D`);
+ else if (i < 80)
+   console.log(`${i} you got C`);
+ else if (i < 90)
+   console.log(`${i} you got B`);
+  else
+    console.log(`${i} you got A`);
+ }
 ```
